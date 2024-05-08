@@ -1,0 +1,76 @@
+/*
+**VALE LEMBRAR QUE, PARA TENTAR FAZER UM SITE IGUAL AO DA PROFESSORA, EU SIMPLESMENTE
+**FUI CHUTANDO OS VALORES DOS TAMANHOS (width, font-size, etc) ATE CHEGAR EM TAMANHOS
+**PARECIDOS OU IGUAIS AO DELA.
+*/
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+/*definir as especificacoes das imagens dos "cartoes"*/
+.tile-image {
+  width: 300px; /*ajustar o tamanho*/
+  float: left; /*fazer com que o paragrafo fique em volta da imagem*/
+  margin-right: 50px; /*dar uma distancia entre a imagem e o paragrafo*/
+}
+
+/*definir o tamanho das div's dos "cartoes"*/
+.card {
+  width: 45%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+span {
+  color: midnightblue;
+}
+
+/*ajustar o site para telas menores (ate 600px)*/
+@media (max-width: 600px){
+  .logo {
+    width: 26%;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .tile-image {
+    width: 100%; /*a imagem do "cartao" deve pegar toda sua div*/
+    margin-bottom: 10px;
+  }
+
+  .card {
+    width: 100%; /*os "cartoes devem pegar todo o comprimento da main div"*/
+    margin-bottom: 20px; /*apenas para dar um pequeno espaçamento*/
+  }
+
+  .card-text {
+    text-align: justify;
+  }
+}
